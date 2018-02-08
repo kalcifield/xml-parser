@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfferConfig>
+    <Offers>
+        <Offer>
+            <Id>49712Dra10m24p</Id>
+            <Name localized="true"></Name>
+            <Active>true</Active>
+            <Description localized="true"></Description>
+            <Type>ROAMING</Type>
+            <VFPLAN>BOTH</VFPLAN>
+            <Throttling_limit_mb>25</Throttling_limit_mb>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Price>642</Price>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>49712Dra10m24p</Upgrade_offer_id>
+                <Upgrade_offer_id>51745Dra100m1w</Upgrade_offer_id>
+                <Upgrade_offer_id>51746Dra100m24h</Upgrade_offer_id>
+                <Upgrade_offer_id>53831Dra50m1d</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Repeatable>true</Repeatable>
+            <PSMCodes>
+                <Activation>RNAPI</Activation>
+                <Deactivation>XRNAPI</Deactivation>
+                <Status>SRNAPI</Status>
+                <Repeat>UJRA</Repeat>
+            </PSMCodes>
+        </Offer>
+        <Offer>
+            <Id>51745Dra100m1w</Id>
+            <Name localized="true"></Name>
+            <Active>true</Active>
+            <Description localized="true"></Description>
+            <Type>ROAMING</Type>
+            <VFPLAN>BOTH</VFPLAN>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Price>2779</Price>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>49712Dra10m24p</Upgrade_offer_id>
+                <Upgrade_offer_id>51745Dra100m1w</Upgrade_offer_id>
+                <Upgrade_offer_id>51746Dra100m24h</Upgrade_offer_id>
+                <Upgrade_offer_id>53831Dra50m1d</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Repeatable>true</Repeatable>
+            <PSMCodes>
+                <Activation>RHETI</Activation>
+                <Deactivation>XRHETI</Deactivation>
+                <Status>SRHETI</Status>
+                <Repeat>UJRA</Repeat>
+            </PSMCodes>
+        </Offer>
+        <Offer>
+            <Id>51746Dra100m24h</Id>
+            <Name localized="true"></Name>
+            <Active>true</Active>
+            <Description localized="true"></Description>
+            <Type>ROAMING</Type>
+            <VFPLAN>BOTH</VFPLAN>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Price>2035</Price>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>49712Dra10m24p</Upgrade_offer_id>
+                <Upgrade_offer_id>51745Dra100m1w</Upgrade_offer_id>
+                <Upgrade_offer_id>51746Dra100m24h</Upgrade_offer_id>
+                <Upgrade_offer_id>53831Dra50m1d</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Repeatable>true</Repeatable>
+            <PSMCodes>
+                <Activation>RNAPI100</Activation>
+                <Deactivation>XRNAPI100</Deactivation>
+                <Status>SRNAPI100</Status>
+                <Repeat>UJRA</Repeat>
+            </PSMCodes>
+        </Offer>
+        <Offer>
+            <Id>53831Dra50m1d</Id>
+            <Name localized="true"></Name>
+            <Active>true</Active>
+            <Description localized="true"></Description>
+            <Type>ROAMING</Type>
+            <VFPLAN>POST</VFPLAN>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Price>990</Price>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>49712Dra10m24p</Upgrade_offer_id>
+                <Upgrade_offer_id>51745Dra100m1w</Upgrade_offer_id>
+                <Upgrade_offer_id>51746Dra100m24h</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <PSMCodes>
+                <Activation>EUNAPI</Activation>
+                <Deactivation>XEUNAPI</Deactivation>
+                <Status>SEUNAPI</Status>
+            </PSMCodes>
+        </Offer>
+        <Offer>
+            <Id>10027DR4RPData</Id>
+            <Name localized="true"></Name>
+            <Active>true</Active>
+            <Description localized="true"></Description>
+            <Type>ROAMING</Type>
+            <VFPLAN>PRE</VFPLAN>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Price>919</Price>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Upgrade_offer_ids/>
+            <PSMCodes>
+                <Activation>ADATNAPI</Activation>
+                <Status>SADATNAPI</Status>
+            </PSMCodes>
+        </Offer>
+        <Offer>
+            <Id>49869Dra50m</Id>
+            <Name localized="true"></Name>
+            <Active>false</Active>
+            <Description localized="true"></Description>
+            <Type>ROAMING</Type>
+            <VFPLAN>BOTH</VFPLAN>
+            <Throttling_limit_mb>50</Throttling_limit_mb>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Price>1849</Price>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+        </Offer>
+        <Offer>
+            <Id>51747Dra500m1m</Id>
+            <Name localized="true"></Name>
+            <Active>false</Active>
+            <Description localized="true"></Description>
+            <Type>ROAMING</Type>
+            <VFPLAN>BOTH</VFPLAN>
+            <Throttling_limit_mb>500</Throttling_limit_mb>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Price>5101</Price>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+        </Offer>
+        <Offer>
+            <Id>54327Dra50m1d</Id>
+            <Name localized="true"></Name>
+            <Active>true</Active>
+            <Description localized="true"></Description>
+            <Type>ROAMING</Type>
+            <VFPLAN>POST</VFPLAN>
+            <Throttling_limit_mb>50</Throttling_limit_mb>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Price>0</Price>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>53831Dra50m1d</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <PSMCodes>
+                <Activation>REDROAMING</Activation>
+                <Deactivation>XREDROAMING</Deactivation>
+                <Status>SREDROAMING</Status>
+            </PSMCodes>
+        </Offer>
+    </Offers>
+</OfferConfig>

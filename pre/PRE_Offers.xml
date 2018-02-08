@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfferConfig>
+    <MBBTariffPlans>
+        <Plan>50502tpMBBbase</Plan>
+        <Plan>TUNNING1</Plan>
+    </MBBTariffPlans>
+    <FreeDataOffers>
+        <Offer>
+            <Id>305</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+        </Offer>
+        <Offer>
+            <Id>294</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+        </Offer>
+        <Offer>
+            <Id>219</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+        </Offer>
+    </FreeDataOffers>
+    <SpecialOffers>
+        <SpecialOffer Bundle="99999" PricePlan="TUNNING1"></SpecialOffer>
+        <!--<SpecialOffer>-->
+            <!--<Id>elso</Id>-->
+            <!--<Bundle>99999</Bundle>-->
+            <!--<PricePlan>TUNNING1</PricePlan>-->
+        <!--</SpecialOffer>-->
+    </SpecialOffers>
+    <Offers>
+        <Offer>
+            <Id>10017SmartPB1</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <SmartPack>true</SmartPack>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>0</Throttling_limit_mb>
+            <Discount_id>238</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>2000</Price>
+            <Online_selfcare_id>Smartpack1</Online_selfcare_id>
+            <Kept_with_DQ>true</Kept_with_DQ>
+            <Upgrade_offer_ids/>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10019SmartPBD1</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <SmartPack>true</SmartPack>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>0</Throttling_limit_mb>
+            <Discount_id>244</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>2000</Price>
+            <Online_selfcare_id>Smartpack1</Online_selfcare_id>
+            <Kept_with_DQ>true</Kept_with_DQ>
+            <Upgrade_offer_ids/>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10018SmartPB2</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <SmartPack>true</SmartPack>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_id>241</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>2946</Price>
+            <Online_selfcare_id>Smartpack2</Online_selfcare_id>
+            <Kept_with_DQ>true</Kept_with_DQ>
+            <Upgrade_offer_ids/>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10020SmartPBD2</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <SmartPack>true</SmartPack>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_id>247</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>2946</Price>
+            <Online_selfcare_id>Smartpack2</Online_selfcare_id>
+            <Kept_with_DQ>true</Kept_with_DQ>
+            <Upgrade_offer_ids/>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>42636prib_gprs</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>26</Throttling_limit_mb>
+            <Discount_id>186</Discount_id>
+            <Discount_counter_direction>up</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>0</Price>
+            <Online_selfcare_id>GPRSPrepaidWAP</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10001prib_Hplus</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>48516prib_mweb</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>30</Throttling_limit_mb>
+            <Discount_id>187</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>185</Price>
+            <Online_selfcare_id>MobilWebNapijegy</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>48516prib_mweb</Upgrade_offer_id>
+                <Upgrade_offer_id>10001prib_Hplus</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids/>
+        </Offer>
+        <Offer>
+            <Id>44570prib_i1G</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>1024</Throttling_limit_mb>
+            <Discount_id>188</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>2787</Price>
+            <Online_selfcare_id>Internet1GB</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>41799prib_i5G</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>5120</Throttling_limit_mb>
+            <Discount_id>189</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>5110</Price>
+            <Online_selfcare_id>Internet5GB</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>45112prib_i100M</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_id>190</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>1486</Price>
+            <Online_selfcare_id>Internet100MB</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10001prib_Hplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10003prib_Pplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10001prib_Hplus</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_id>191</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>true</Active>
+            <Price>919</Price>
+            <Online_selfcare_id>ZsebNet100</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10001prib_Hplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10003prib_Pplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+                <Upgrade_offer_id>10021prib_Z2G</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10003prib_Pplus</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>500</Throttling_limit_mb>
+            <Discount_id>192</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>true</Active>
+            <Price>1848</Price>
+            <Online_selfcare_id>ZsebNet500</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10003prib_Pplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+                <Upgrade_offer_id>10021prib_Z2G</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10004prib_Extra</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>1024</Throttling_limit_mb>
+            <Discount_id>193</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>true</Active>
+            <Price>2313</Price>
+            <Online_selfcare_id>ZsebNet1000</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+                <Upgrade_offer_id>10021prib_Z2G</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>48025prib_Hobbi</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_id>195</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>929</Price>
+            <Online_selfcare_id>MobilWebHobbi</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10001prib_Hplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10003prib_Pplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10021prib_Z2G</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>48026prib_Profi</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>500</Throttling_limit_mb>
+            <Discount_id>196</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>1858</Price>
+            <Online_selfcare_id>MobilWebProfi</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10003prib_Pplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+                <Upgrade_offer_id>10021prib_Z2G</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10009prmb_Daily</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>MBB</Type>
+            <Throttling_limit_mb>500</Throttling_limit_mb>
+            <Discount_id>197</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>true</Active>
+            <Price>641</Price>
+            <Online_selfcare_id>NetjegyNapijegy</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10009prmb_Daily</Upgrade_offer_id>
+                <Upgrade_offer_id>10010prmb_Week</Upgrade_offer_id>
+                <Upgrade_offer_id>10011prmb_Month</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids/>
+        </Offer>
+        <Offer>
+            <Id>10010prmb_Week</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>MBB</Type>
+            <Throttling_limit_mb>1024</Throttling_limit_mb>
+            <Discount_id>198</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>true</Active>
+            <Price>2313</Price>
+            <Online_selfcare_id>NetjegyHetijegy</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10009prmb_Daily</Upgrade_offer_id>
+                <Upgrade_offer_id>10010prmb_Week</Upgrade_offer_id>
+                <Upgrade_offer_id>10011prmb_Month</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids/>
+        </Offer>
+        <Offer>
+            <Id>10011prmb_Month</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>MBB</Type>
+            <Throttling_limit_mb>3072</Throttling_limit_mb>
+            <Discount_id>199</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>true</Active>
+            <Price>3707</Price>
+            <Online_selfcare_id>NetjegyHavijegy</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10009prmb_Daily</Upgrade_offer_id>
+                <Upgrade_offer_id>10010prmb_Week</Upgrade_offer_id>
+                <Upgrade_offer_id>10011prmb_Month</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids/>
+        </Offer>
+        <Offer>
+            <Id>10002prib_Hpfr</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_id>204</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>0</Price>
+            <Online_selfcare_id></Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10001prib_Hplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10003prib_Pplus</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>43080SCool</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>15</Throttling_limit_mb>
+            <Discount_id>200</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>0</Price>
+            <Online_selfcare_id>VitamaxScool</Online_selfcare_id>
+            <Kept_with_DQ>true</Kept_with_DQ>
+            <Upgrade_offer_ids/>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10014prib_Z100d</Id>
+            <Name localized="true"></Name>
+            <Description localized="false">Ezzel az opcióval 100 MB áll rendelkezésedre a ciklus végéig. Az opció kedvezményes ára 919 Ft. Ha többet szeretnél netezni, válaszd kiegészítő adat opciónkat.</Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_id>233</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>919</Price>
+            <Online_selfcare_id>ZsebNet100_3ho_50</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10001prib_Hplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10003prib_Pplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+                <Upgrade_offer_id>10021prib_Z2G</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10015prib_Z500d</Id>
+            <Name localized="false">ZsebNet 500 3hó 50%</Name>
+            <Description localized="false">Ezzel az opcióval 500 MB áll rendelkezésedre a ciklus végéig. Az opció kedvezményes ára 1848 Ft. Ha többet szeretnél netezni, válaszd kiegészítő adat opciónkat.</Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>500</Throttling_limit_mb>
+            <Discount_id>234</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="false">Kedves Ügyfelünk! Elérted adatforgalmad 80%-át. 100%-nál a szolgáltatást számlazárásig szüneteltetjük. Adatforgalmi és egyéb információidat itt mindig díjmentesen elérheted.</Warning_text>
+            <Throttling_text localized="false">Kedves Ügyfelünk! Elérted adatforgalmad 100%-át, így a szolgáltatást számlazárásig szüneteltetjük. Ha tovább interneteznél, válassz kiegészítő adatopciót.</Throttling_text>
+            <Active>false</Active>
+            <Price>1848</Price>
+            <Online_selfcare_id>ZsebNet500_3ho_50</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10003prib_Pplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+                <Upgrade_offer_id>10021prib_Z2G</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10016prib_Z1Gd</Id>
+            <Name localized="false">ZsebNet 1000 3hó 50%</Name>
+            <Description localized="false">Ezzel az opcióval 1 GB áll rendelkezésedre a ciklus végéig. Az opció kedvezményes ára 2313 Ft. Ha többet szeretnél netezni, válaszd kiegészítő adat opciónkat.</Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>1024</Throttling_limit_mb>
+            <Discount_id>235</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="false">Kedves Ügyfelünk! Elérted adatforgalmad 80%-át. 100%-nál a szolgáltatást számlazárásig szüneteltetjük. Adatforgalmi és egyéb információidat itt mindig díjmentesen elérheted.</Warning_text>
+            <Throttling_text localized="false">Kedves Ügyfelünk! Elérted adatforgalmad 100%-át, így a szolgáltatást számlazárásig szüneteltetjük. Ha tovább interneteznél, válassz kiegészítő adatopciót.</Throttling_text>
+            <Active>false</Active>
+            <Price>2313</Price>
+            <Online_selfcare_id>ZsebNet1000_3ho_50</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+                <Upgrade_offer_id>10021prib_Z2G</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10021prib_Z2G</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>2048</Throttling_limit_mb>
+            <Discount_id>248</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>true</Active>
+            <Price>3242</Price>
+            <Online_selfcare_id>ZsebNet2000</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10021prib_Z2G</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10022prib_Z2Gd</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>2048</Throttling_limit_mb>
+            <Discount_id>249</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>3242</Price>
+            <Online_selfcare_id>ZsebNet2000_3ho_50</Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10021prib_Z2G</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10023SmartPB3</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <SmartPack>true</SmartPack>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>1024</Throttling_limit_mb>
+            <Discount_id>256</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>3858</Price>
+            <Online_selfcare_id>Smartpack1</Online_selfcare_id>
+            <Kept_with_DQ>true</Kept_with_DQ>
+            <Upgrade_offer_ids/>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10024SmartPB4</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <SmartPack>true</SmartPack>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>1024</Throttling_limit_mb>
+            <Discount_id>260</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>false</Active>
+            <Price>5858</Price>
+            <Online_selfcare_id>Smartpack2</Online_selfcare_id>
+            <Kept_with_DQ>true</Kept_with_DQ>
+            <Upgrade_offer_ids/>
+            <Addon_ids>
+                <Addon_id>10007pria_100M</Addon_id>
+                <Addon_id>10005pria_500M</Addon_id>
+                <Addon_id>10008pria_1G</Addon_id>
+                <Addon_id>10030pria_100w</Addon_id>
+            </Addon_ids>
+        </Offer>
+        <Offer>
+            <Id>10029prib_Z100w</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <SmartPack>false</SmartPack>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>100</Throttling_limit_mb>
+            <Discount_id>271</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>true</Active>
+            <Price>278</Price>
+            <Online_selfcare_id></Online_selfcare_id>
+            <Upgrade_offer_ids>
+                <Upgrade_offer_id>10001prib_Hplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10003prib_Pplus</Upgrade_offer_id>
+                <Upgrade_offer_id>10004prib_Extra</Upgrade_offer_id>
+                <Upgrade_offer_id>10029prib_Z100w</Upgrade_offer_id>
+            </Upgrade_offer_ids>
+            <Addon_ids/>
+        </Offer>
+        <Offer>
+            <Id>10025SmartPBD3</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <SmartPack>true</SmartPack>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>1024</Throttling_limit_mb>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>true</Active>
+            <Price>3858</Price>
+            <Kept_with_DQ>true</Kept_with_DQ>
+            <Upgrade_offer_ids/>
+            <Addon_ids/>
+        </Offer>
+        <Offer>
+            <Id>10026SmartPBD4</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <SmartPack>true</SmartPack>
+            <Type>IOYM</Type>
+            <Throttling_limit_mb>1024</Throttling_limit_mb>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Warning_percent>80</Warning_percent>
+            <Warning_text localized="true"></Warning_text>
+            <Throttling_text localized="true"></Throttling_text>
+            <Active>true</Active>
+            <Price>5858</Price>
+            <Kept_with_DQ>true</Kept_with_DQ>
+            <Upgrade_offer_ids/>
+            <Addon_ids/>
+        </Offer>
+    </Offers>
+    <Addons>
+        <Addon>
+            <Id>10007pria_100M</Id>
+            <Name localized="true"></Name>
+            <Data_usage_mb>100</Data_usage_mb>
+            <Discount_id>201</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Description localized="true"></Description>
+            <Price>465</Price>
+            <Active>true</Active>
+            <Online_selfcare_id>PluszAdat100</Online_selfcare_id>
+        </Addon>
+        <Addon>
+            <Id>10005pria_500M</Id>
+            <Name localized="true"></Name>
+            <Data_usage_mb>500</Data_usage_mb>
+            <Discount_id>194</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Description localized="true"></Description>
+            <Price>929</Price>
+            <Active>true</Active>
+            <Online_selfcare_id>PluszAdat500</Online_selfcare_id>
+        </Addon>
+        <Addon>
+            <Id>10008pria_1G</Id>
+            <Name localized="true"></Name>
+            <Data_usage_mb>1024</Data_usage_mb>
+            <Discount_id>202</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Description localized="true"></Description>
+            <Price>1393</Price>
+            <Active>true</Active>
+            <Online_selfcare_id>PluszAdat1GB</Online_selfcare_id>
+        </Addon>
+        <Addon>
+            <Id>10030pria_100w</Id>
+            <Name localized="true"></Name>
+            <Data_usage_mb>100</Data_usage_mb>
+            <Discount_id>272</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Description localized="true"></Description>
+            <Price>278</Price>
+            <Active>true</Active>
+            <Online_selfcare_id></Online_selfcare_id>
+            <Period>7</Period>
+        </Addon>
+    </Addons>
+    <Rewards>
+        <Reward>
+            <Id>(Bucket)</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+        </Reward>
+        <Reward>
+            <Id>203</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+        </Reward>
+        <Reward>
+            <Id>205</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+        </Reward>
+        <Reward>
+            <Id>221</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+        </Reward>
+        <Reward>
+            <Id>225</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+        </Reward>
+        <Reward>
+            <Id>228</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+        </Reward>
+        <Reward>
+            <Id>261</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+        </Reward>
+    </Rewards>
+    <DataQuotaGroups>
+        <DataQuotaGroup>
+            <Id>monthly1gb</Id>
+            <Name localized="true"></Name>
+            <Order>1</Order>
+        </DataQuotaGroup>
+        <DataQuotaGroup>
+            <Id>monthly100mb</Id>
+            <Name localized="true"></Name>
+            <Order>2</Order>
+        </DataQuotaGroup>
+        <DataQuotaGroup>
+            <Id>monthly500mb</Id>
+            <Name localized="true"></Name>
+            <Order>3</Order>
+        </DataQuotaGroup>
+        <DataQuotaGroup>
+            <Id>weekly100mb</Id>
+            <Name localized="true"></Name>
+            <Order>4</Order>
+        </DataQuotaGroup>
+        <DataQuotaGroup>
+            <Id>monthly3gb</Id>
+            <Name localized="true"></Name>
+            <Order>5</Order>
+        </DataQuotaGroup>
+        <DataQuotaGroup>
+            <Id>weekly150mb</Id>
+            <Name localized="true"></Name>
+            <Order>6</Order>
+        </DataQuotaGroup>
+        <DataQuotaGroup>
+            <Id>monthly300mb</Id>
+            <Name localized="true"></Name>
+            <Order>7</Order>
+        </DataQuotaGroup>
+        <DataQuotaGroup>
+            <Id>monthly5gb</Id>
+            <Name localized="true"></Name>
+            <Order>8</Order>
+        </DataQuotaGroup>
+        <DataQuotaGroup>
+            <Id>cvm_offers</Id>
+            <Name localized="true"></Name>
+            <Order>999</Order>
+        </DataQuotaGroup>
+    </DataQuotaGroups>
+    <DataQuotas>
+        <DataQuota>
+            <Id>10033prir_m100</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_MONTHLY</Recurring_type>
+            <Group>monthly100mb</Group>
+            <Included_data_mb>100</Included_data_mb>
+            <Discount_id>275</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>557</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10040prio_m100</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>ONE_TIME</Recurring_type>
+            <Group>monthly100mb</Group>
+            <Included_data_mb>100</Included_data_mb>
+            <Discount_id>282</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>696</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10035prir_m500</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_MONTHLY</Recurring_type>
+            <Group>monthly500mb</Group>
+            <Included_data_mb>500</Included_data_mb>
+            <Discount_id>277</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>1000</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10041prio_m500</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>ONE_TIME</Recurring_type>
+            <Group>monthly500mb</Group>
+            <Included_data_mb>500</Included_data_mb>
+            <Discount_id>283</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>1393</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10036prir_m1G</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_MONTHLY</Recurring_type>
+            <Group>monthly1gb</Group>
+            <Included_data_mb>1024</Included_data_mb>
+            <Discount_id>278</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>1393</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10042prio_m1G</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>ONE_TIME</Recurring_type>
+            <Group>monthly1gb</Group>
+            <Included_data_mb>1024</Included_data_mb>
+            <Discount_id>284</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>true</Active>
+            <Price>1800</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10031prir_w100</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_WEEKLY</Recurring_type>
+            <Group>weekly100mb</Group>
+            <Included_data_mb>100</Included_data_mb>
+            <Discount_id>273</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>278</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10039prio_w100</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>ONE_TIME</Recurring_type>
+            <Group>weekly100mb</Group>
+            <Included_data_mb>100</Included_data_mb>
+            <Discount_id>281</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>325</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10032prir_w300</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_WEEKLY</Recurring_type>
+            <Group>cvm_offers</Group>
+            <Included_data_mb>300</Included_data_mb>
+            <Discount_id>274</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>278</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10037prir_m1Gd</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_MONTHLY</Recurring_type>
+            <Group>cvm_offers</Group>
+            <Included_data_mb>1024</Included_data_mb>
+            <Discount_id>279</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>1393</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10038prir_m3G</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_MONTHLY</Recurring_type>
+            <Group>monthly3gb</Group>
+            <Included_data_mb>3072</Included_data_mb>
+            <Discount_id>280</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>2322</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10043prio_m3G</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>ONE_TIME</Recurring_type>
+            <Group>monthly3gb</Group>
+            <Included_data_mb>3072</Included_data_mb>
+            <Discount_id>285</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>false</Active>
+            <Price>2787</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10045prir_w150</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_WEEKLY</Recurring_type>
+            <Group>weekly150mb</Group>
+            <Included_data_mb>150</Included_data_mb>
+            <Discount_id>300</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>true</Active>
+            <Price>300</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10034prir_m300</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_MONTHLY</Recurring_type>
+            <Group>monthly300mb</Group>
+            <Included_data_mb>300</Included_data_mb>
+            <Discount_id>276</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>true</Active>
+            <Price>500</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10048prio_m300</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>ONE_TIME</Recurring_type>
+            <Group>monthly300mb</Group>
+            <Included_data_mb>300</Included_data_mb>
+            <Discount_id>303</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>true</Active>
+            <Price>750</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10046prir_m1G</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_MONTHLY</Recurring_type>
+            <Group>monthly1gb</Group>
+            <Included_data_mb>1024</Included_data_mb>
+            <Discount_id>301</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>true</Active>
+            <Price>1400</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10047prir_m5G</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>RECURRING_MONTHLY</Recurring_type>
+            <Group>monthly5gb</Group>
+            <Included_data_mb>5120</Included_data_mb>
+            <Discount_id>302</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>true</Active>
+            <Price>4000</Price>
+        </DataQuota>
+        <DataQuota>
+            <Id>10049prio_m5G</Id>
+            <Name localized="true"></Name>
+            <Description localized="true"></Description>
+            <Type>IOYM</Type>
+            <Recurring_type>ONE_TIME</Recurring_type>
+            <Group>monthly5gb</Group>
+            <Included_data_mb>5120</Included_data_mb>
+            <Discount_id>304</Discount_id>
+            <Discount_counter_direction>down</Discount_counter_direction>
+            <Active>true</Active>
+            <Price>6000</Price>
+        </DataQuota>
+    </DataQuotas>
+</OfferConfig>
