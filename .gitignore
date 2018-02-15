@@ -1,6 +1,6 @@
-post/posql/
-pre/presql/
-roaming/roamingsql/
+post/posql/*
+pre/presql/*
+roaming/roamingsql/*
 
 post/__pycache__
 pre/__pycache__
