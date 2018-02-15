@@ -13,14 +13,24 @@ def read_data():
         return raw_data
 
 def reset_file():
-    file_name = "roaming.sql"
+    file_name = "roamingsql/roaming.sql"
+    open(file_name, "w").close()
+    file_name = "roamingsql/roaming_nestedkeyval.sql"
+    open(file_name, "w").close()
+    file_name = "roamingsql/roaming_objectrelation.sql"
     open(file_name, "w").close()
 
 parser = json.loads(json.dumps(xmltodict.parse(read_data(), process_namespaces=True)))
 reset_file()
 
 def write_to_file(table, uid, *args):
-    file_name = "roaming.sql"
+    file_name = "roamingsql/roaming.sql"
+
+    if table == "nested_key_value":
+        file_name = "roamingsql/roaming_nestedkeyval.sql"
+
+    if table == "object_relation":
+        file_name = "roamingsql/roaming_objectrelation.sql"
 
     insert_line = "insert into " + table + " VALUES (\'" + uid + "\'"
     for arg in args:
@@ -45,7 +55,7 @@ def find_value_in_props_file(language_variable, file_name):
                 return line[index_of_equalsign + 2:].rstrip()
 
 
-def generate_multilanguage_nestedkeyvalue(value_type, key, id, keyvalue_uid):
+def generate_multilanguage_nestedkeyvalue(value_type, key, offer_id, keyvalue_uid):
     prop_files = {"eng": "../language_files/Language-offers_hu.properties",
                   "hun": "../language_files/Language-offers_en.properties",
                   "def": "../language_files/Language-offers.properties",
@@ -57,7 +67,7 @@ def generate_multilanguage_nestedkeyvalue(value_type, key, id, keyvalue_uid):
     if key == "Throttling_text":
         key = "ThrottlingText"
 
-    language_variable = "Roaming." + value_type + "." + id + "." + key
+    language_variable = "Roaming." + value_type + "." + offer_id + "." + key
     for eng, value in prop_files.items():
         if eng == "unLocalized":
             prop_line = "null"
@@ -67,12 +77,12 @@ def generate_multilanguage_nestedkeyvalue(value_type, key, id, keyvalue_uid):
             if prop_line is None:
             #             print("nán1")
                 language_variable = "Roaming." + value_type + \
-                                "." + id + "." + "POST" + "." + key
+                                "." + offer_id + "." + "POST" + "." + key
                 prop_line = find_value_in_props_file(language_variable, value)
             if prop_line is None:
             #             print("nán2")
                 language_variable = "Roaming." + value_type + \
-                                "." + id + "." + "PRE" + "." + key
+                                "." + offer_id + "." + "PRE" + "." + key
                 prop_line = find_value_in_props_file(language_variable, value)
             if prop_line is None:
                 print("nán3, baj van")
@@ -80,67 +90,79 @@ def generate_multilanguage_nestedkeyvalue(value_type, key, id, keyvalue_uid):
 
         prop_line = prop_line.replace("don't", "don''t")
         nestedkeyvalue_uid = keyvalue_uid + "-" + eng
-        write_to_file("nestedkeyvalue", nestedkeyvalue_uid, keyvalue_uid, prop_line)
+        nestedkeyvalue_id = offer_id + "-" + key + "-" + eng
+        implemented_nestedrow_uid = "Multi-language-" + eng
+        write_to_file("nested_key_value", nestedkeyvalue_uid, nestedkeyvalue_id, prop_line, implemented_nestedrow_uid,keyvalue_uid)
 
 
-def generate_psmcode_nestedkeyvalue(dict_val, keyvalue_uid):
+def generate_psmcode_nestedkeyvalue(dict_val, keyvalue_uid, dictkey, offer_id):
     for key, val in dict_val.items():
         nestedkeyvalue_uid = keyvalue_uid + "-" + key
-        write_to_file("nestedkeyvalue", nestedkeyvalue_uid, keyvalue_uid, val)
+        implemented_nestedrow_uid = "PSMCodes-" + key
+        nestedkeyvalue_id = offer_id + "-" + dictkey + "-" + key
 
-def generate_objectrelation(relation_list, id, version, key):
+        write_to_file("nested_key_value",
+                      nestedkeyvalue_uid, nestedkeyvalue_id, val, implemented_nestedrow_uid, keyvalue_uid)
+
+
+def generate_objectrelation(relation_list, offer_id, version, key):
     for relation_id in relation_list:
-        keyvalue_uid = id + "-" + version + "-" + key
+        keyvalue_uid = offer_id + "-" + version + "-" + key
         objectrelation_uid = keyvalue_uid + "-" + relation_id
         relatedobject_uid = relation_id + "-" + version
+        objectrelation_id = offer_id + "-" + key + "-" + relation_id
 
-        write_to_file("objectrelation", objectrelation_uid, keyvalue_uid, relatedobject_uid)
+        write_to_file("object_relation", objectrelation_uid, objectrelation_id, keyvalue_uid, relatedobject_uid)
 
 
-for offer in parser['OfferConfig']['Offers']['Offer']:
+def parse_xml_to_json():
+    print("offer")
     version = "1.0.0"
-    # insert object
-    # insert unlocalized
     value_type = "Offers"
-    id = offer['Id']
-    object_uid = id + "-" + version
-    write_to_file("object", object_uid, id)
 
-    for key in offer.keys():
-        keyvalue_uid = id + "-" + version + "-" + key
-        implementedrow_uid = "Roaming-Offer-" + version + "-" + key
+    for offer in parser['OfferConfig']['Offers']['Offer']:
+        offer_id = offer['Id']
+        object_uid = offer_id + "-" + version
+        write_to_file("object", object_uid, offer_id)
 
-        value = "null"
-        dict_val = offer[key]
-        #         print(dict_val)
-        if is_dictionary(dict_val):
-            if '@localized' in dict_val:
-                if dict_val['@localized'] == "false":
-                    print("not gut")
-                else:
-                    generate_multilanguage_nestedkeyvalue(value_type, key, id, keyvalue_uid)
+        for key in offer.keys():
+            keyvalue_id = offer_id + "-" + key
+            keyvalue_uid = offer_id + "-" + version + "-" + key
+            implementedrow_uid = "Roaming-Offer-" + version + "-" + key
+            implemented_structure_uid = "Roaming-Offer-1.0.0"
 
-
-                    # unlocalized null / if false -> value between tags
-
-            if 'Upgrade_offer_id' in dict_val:
-
-                offer_id_list = dict_val['Upgrade_offer_id']
-                if type(offer_id_list) is not list:
-                    helper_list = []
-                    helper_list.append(offer_id_list)
-                    offer_id_list = helper_list
-                generate_objectrelation(offer_id_list, id, version, key)
-
-            if 'Activation' in dict_val:
-                generate_psmcode_nestedkeyvalue(dict_val, keyvalue_uid)
+            value = "null"
+            dict_val = offer[key]
+            #         print(dict_val)
+            if is_dictionary(dict_val):
+                if '@localized' in dict_val:
+                    if dict_val['@localized'] == "false":
+                        print("not gut")
+                    else:
+                        generate_multilanguage_nestedkeyvalue(value_type, key, offer_id, keyvalue_uid)
 
 
+                        # unlocalized null / if false -> value between tags
 
-        elif offer[key] is not None:
-            value = offer[key]
+                elif 'Upgrade_offer_id' in dict_val:
 
-        gc.collect()
-        write_to_file("keyvalues", keyvalue_uid, object_uid, implementedrow_uid, value)
+                    offer_id_list = dict_val['Upgrade_offer_id']
+                    if type(offer_id_list) is not list:
+                        helper_list = []
+                        helper_list.append(offer_id_list)
+                        offer_id_list = helper_list
+                    generate_objectrelation(offer_id_list, offer_id, version, key)
+
+                elif 'Activation' in dict_val:
+                    generate_psmcode_nestedkeyvalue(dict_val, keyvalue_uid, key, offer_id)
 
 
+
+            elif offer[key] is not None:
+                value = offer[key]
+
+            write_to_file("key_value", keyvalue_uid,keyvalue_id ,value, implementedrow_uid,object_uid)
+            gc.collect()
+
+
+parse_xml_to_json()

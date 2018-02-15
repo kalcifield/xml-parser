@@ -25,6 +25,9 @@ reset_file()
 def write_to_file(table, uid, *args):
     file_name = "posql/post_refill.sql"
 
+    if table == "nested_key_value":
+        file_name = "posql/post_refill_nestedkeyval.sql"
+
     insert_line = "insert into " + table + " VALUES (\'" + uid + "\'"
     for arg in args:
         if arg == "null":
@@ -62,15 +65,20 @@ def generate_multilanguage_nestedkeyvalue(object_type, key, id, version, keyvalu
                 prop_line = "null"
 
         nestedkeyvalue_uid = keyvalue_uid + "-" + lang
+        implemented_nestedrow_uid = "Multi-language-" + lang
+        nestedkeyvalue_id = id + "-" + key + "-" + lang
         # print(prop_line)
-        write_to_file("nestedkeyvalue", nestedkeyvalue_uid, keyvalue_uid, prop_line)
+        write_to_file("nested_key_value", nestedkeyvalue_uid,nestedkeyvalue_id, prop_line, implemented_nestedrow_uid, keyvalue_uid)
 
-def generate_psmcode_nestedkeyvalue(dict_val, keyvalue_uid):
+def generate_psmcode_nestedkeyvalue(dict_val, keyvalue_uid, dictkey, id):
     for key, val in dict_val.items():
         nestedkeyvalue_uid = keyvalue_uid + "-" + key
+        nestedkeyvalue_id = id + "-" + dictkey + "-" + key
         if val is None:
             val = "null"
-        write_to_file("nestedkeyvalue", nestedkeyvalue_uid, keyvalue_uid, val)
+        implemented_nestedrow_uid = "PSMCodes-" + key
+        write_to_file("nested_key_value", nestedkeyvalue_uid,
+                      nestedkeyvalue_id, val, implemented_nestedrow_uid, keyvalue_uid)
 
 
 def is_dictionary(ele):
@@ -88,8 +96,10 @@ def parse_xml_to_json():
     for refill in refill_list:
         refill_id = refill['Id']
         object_uid = refill_id + "-" + version
-        write_to_file("object", object_uid, refill_id)
+        implented_structure_uid = "Post-Refill-1.0.0"
+        write_to_file("object", object_uid, refill_id, implented_structure_uid)
         for key, val in refill.items():
+            keyvalue_id = refill_id + "-" + key
             keyvalue_uid = refill_id + "-" + version + "-" + key
             implementedrow_uid = "Post-Refill-"+version + "-" + key
             input_val = "null"
@@ -103,7 +113,7 @@ def parse_xml_to_json():
                         generate_multilanguage_nestedkeyvalue(object_type, key, refill_id, version, keyvalue_uid)
 
                 elif 'Activation' in val:
-                    generate_psmcode_nestedkeyvalue(val, keyvalue_uid)
+                    generate_psmcode_nestedkeyvalue(val, keyvalue_uid, key, refill_id)
 
                 else:
                     print(val)
@@ -112,7 +122,8 @@ def parse_xml_to_json():
                 if val is not None:
                     input_val = val
             # print(keyvalue_uid, implementedrow_uid, input_val)
-            write_to_file("keyvalue", keyvalue_uid, object_uid, implementedrow_uid, input_val)
+            write_to_file("key_value", keyvalue_uid,keyvalue_id ,input_val, implementedrow_uid,object_uid)
+
             gc.collect()
 
 

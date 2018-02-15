@@ -16,7 +16,10 @@ def read_data():
 def reset_file():
     file_name = "posql/post_offer.sql"
     open(file_name, "w").close()
-
+    file_name = "posql/post_offer_objectrelation.sql"
+    open(file_name, "w").close()
+    file_name = "posql/post_offer_nestedkeyval.sql"
+    open(file_name, "w").close()
 
 parser = json.loads(json.dumps(xmltodict.parse(read_data(), process_namespaces=True)))
 reset_file()
@@ -24,6 +27,12 @@ reset_file()
 
 def write_to_file(table, uid, *args):
     file_name = "posql/post_offer.sql"
+
+    if table == "object_relation":
+        file_name = "posql/post_offer_objectrelation.sql"
+
+    if table == "nested_key_value":
+        file_name = "posql/post_offer_nestedkeyval.sql"
 
     insert_line = "insert into " + table + " VALUES (\'" + uid + "\'"
     for arg in args:
@@ -62,23 +71,32 @@ def generate_multilanguage_nestedkeyvalue(object_type, key, id, version, keyvalu
                 prop_line = "null"
 
         nestedkeyvalue_uid = keyvalue_uid + "-" + lang
-        # print(prop_line)
-        write_to_file("nestedkeyvalue", nestedkeyvalue_uid, keyvalue_uid, prop_line)
+        implemented_nestedrow_uid = "Multi-language-" + lang
+        nestedkeyvalue_id = id + "-" + key + "-" + lang
+        write_to_file("nested_key_value", nestedkeyvalue_uid, nestedkeyvalue_id, prop_line, implemented_nestedrow_uid,keyvalue_uid)
 
-def generate_psmcode_nestedkeyvalue(dict_val, keyvalue_uid):
+
+def generate_psmcode_nestedkeyvalue(dict_val, keyvalue_uid, dictkey, id):
     for key, val in dict_val.items():
         nestedkeyvalue_uid = keyvalue_uid + "-" + key
+        nestedkeyvalue_id = id + "-" + dictkey + "-" + key
+
         if val is None:
             val = "null"
-        write_to_file("nestedkeyvalue", nestedkeyvalue_uid, keyvalue_uid, val)
+
+        implemented_nestedrow_uid = "PSMCodes-" + key
+        write_to_file("nested_key_value",
+                      nestedkeyvalue_uid, nestedkeyvalue_id, val, implemented_nestedrow_uid, keyvalue_uid)
+
 
 def generate_objectrelation(relation_list, id, version, key):
     for relation_id in relation_list:
         keyvalue_uid = id + "-" + version + "-" + key
         objectrelation_uid = keyvalue_uid + "-" + relation_id
         relatedobject_uid = relation_id + "-" + version
+        objectrelation_id = id + "-" + key + "-" + relation_id
 
-        write_to_file("objectrelation", objectrelation_uid, keyvalue_uid, relatedobject_uid)
+        write_to_file("object_relation", objectrelation_uid, objectrelation_id, keyvalue_uid, relatedobject_uid)
 
 
 def is_dictionary(ele):
@@ -96,8 +114,10 @@ def parse_xml_to_json():
     for offer in offer_list:
         offer_id = offer['Id']
         object_uid = offer_id + "-" + version
-        write_to_file("object", object_uid, offer_id)
+        implemented_structure_uid = "Post-Offer-1.0.0"
+        write_to_file("object", object_uid, offer_id, implemented_structure_uid)
         for key, val in offer.items():
+            keyvalue_id = offer_id + "-" + key
             keyvalue_uid = offer_id + "-" + version + "-" + key
             implementedrow_uid = "Post-Offer-"+version + "-" + key
             input_val = "null"
@@ -109,11 +129,11 @@ def parse_xml_to_json():
                             input_val = val['#text']
                             print("we dont like consistency")
                         nestedkeyvalue_uid = keyvalue_uid + "-" + "un"
-                        write_to_file("nestedkeyvalue", nestedkeyvalue_uid, keyvalue_uid, "unLocalized")
+                        write_to_file("nested_key_value", nestedkeyvalue_uid, keyvalue_uid, "unLocalized")
 
                     else:
                         generate_multilanguage_nestedkeyvalue(object_type, key, offer_id, version, keyvalue_uid)
-
+    
                 elif 'Upgrade_offer_id' in val:
                     offer_id_list = val['Upgrade_offer_id']
                     if type(offer_id_list) is not list:
@@ -140,7 +160,8 @@ def parse_xml_to_json():
 
 
                 elif 'Activation' in val:
-                    generate_psmcode_nestedkeyvalue(val, keyvalue_uid)
+                    generate_psmcode_nestedkeyvalue(val, keyvalue_uid, key, offer_id)
+
 
                 elif 'UnlimitedContentPackage' in val:
                     unlcontpack_id_list = val['UnlimitedContentPackage']
@@ -157,8 +178,7 @@ def parse_xml_to_json():
                 if val is not None:
                     input_val = val
             # print(keyvalue_uid, implementedrow_uid, input_val)
-    #
-            write_to_file("keyvalue", keyvalue_uid, object_uid, implementedrow_uid, input_val)
+            write_to_file("key_value", keyvalue_uid,keyvalue_id ,input_val, implementedrow_uid,object_uid)
             gc.collect()
 
 

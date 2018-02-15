@@ -16,6 +16,8 @@ def read_data():
 def reset_file():
     file_name = "presql/pre_dataquota_groups.sql"
     open(file_name, "w").close()
+    file_name = "presql/pre_dataquota_groups_nestedkeyval.sql"
+    open(file_name, "w").close()
 
 
 parser = json.loads(json.dumps(xmltodict.parse(read_data(), process_namespaces=True)))
@@ -24,6 +26,9 @@ reset_file()
 
 def write_to_file(table, uid, *args):
     file_name = "presql/pre_dataquota_groups.sql"
+
+    if table == "nested_key_value":
+        file_name = "presql/pre_dataquota_groups_nestedkeyval.sql"
 
     insert_line = "insert into " + table + " VALUES (\'" + uid + "\'"
     for arg in args:
@@ -62,8 +67,9 @@ def generate_multilanguage_nestedkeyvalue(object_type, key, id, version, keyvalu
                 prop_line = "null"
 
         nestedkeyvalue_uid = keyvalue_uid + "-" + lang
-        # print(prop_line)
-        write_to_file("nestedkeyvalue", nestedkeyvalue_uid, keyvalue_uid, prop_line)
+        implemented_nestedrow_uid = "Multi-language-" + lang
+        nestedkeyvalue_id = id + "-" + key + "-" + lang
+        write_to_file("nested_key_value", nestedkeyvalue_uid, nestedkeyvalue_id, prop_line, implemented_nestedrow_uid,keyvalue_uid)
 
 
 def is_dictionary(ele):
@@ -82,7 +88,8 @@ def parse_xml_to_json():
     for dataquota_group in dataquota_group_list:
         dataquota_group_id = dataquota_group['Id']
         object_uid = dataquota_group_id + "-" + version
-        write_to_file("object", object_uid, dataquota_group_id)
+        implemented_structure_uid = "Pre-DataQuotaGroup-1.0.0"
+        write_to_file("object", object_uid, dataquota_group_id, implemented_structure_uid)
         for key, val in dataquota_group.items():
             keyvalue_uid = dataquota_group_id + "-" + version + "-" + key
             implementedrow_uid = "Pre-DataQuotaGroup-"+version + "-" + key
@@ -98,8 +105,8 @@ def parse_xml_to_json():
                 if val is not None:
                     input_val = val
             # print(keyvalue_uid, implementedrow_uid, input_val)
+            write_to_file("key_value", keyvalue_uid,dataquota_group_id ,input_val, implementedrow_uid,object_uid)
             gc.collect()
-            write_to_file("keyvalue", keyvalue_uid, object_uid, implementedrow_uid, input_val)
 
 
 
